@@ -217,6 +217,7 @@ export type PaymentType = {
 //     });
 //   });
 // };
+const serverURL = import.meta.env.VITE_SERVER_URL;
 export const getAllPayments = (): Promise<AxiosResponse> => {
   //   const transactionsPromise = fetch(
   //     `https://paymentsdemo.neueda.com/api/payment`,

@@ -39,7 +39,7 @@ const AddTransactions = (): JSX.Element => {
           setMessage("something went wrong");
         }
       })
-      .catch((error) => console.log("Went Wrong", console.error));
+      .catch((error) => console.log("Went Wrong", console.log(error)));
   };
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     dispatch({ field: event.target.id, value: event.target.value });
