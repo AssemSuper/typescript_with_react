@@ -224,7 +224,7 @@ export const getAllPayments = (): Promise<AxiosResponse> => {
   //     { method: "GET", headers: { Accept: "application/json" } }
   //   );
   const transactionsPromise = axios<PaymentType[]>({
-    url: `https://paymentsdemo.neueda.com/api/payment`,
+    url: `${serverURL}/api/payment`,
     method: "GET",
     headers: { Accept: "application/json" },
   });
@@ -235,7 +235,7 @@ export const addNewTransaction = (
   payment: PaymentType
 ): Promise<AxiosResponse<PaymentType>> => {
   return axios<PaymentType>({
-    url: `https://paymentsdemo.neueda.com/api/payment`,
+    url: `${serverURL}/api/payment`,
     method: "POST",
     headers: { Accept: "application/json", "Content-Type": "application/json" },
     data: payment,
