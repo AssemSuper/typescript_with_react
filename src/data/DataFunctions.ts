@@ -206,6 +206,7 @@ export type PaymentType = {
 // };
 
 // export const getAllPaymentsRestVersion = (): void => {
+
 //   const responsePromise: Promise<Response> = fetch(
 //     "https://paymentsdemo.neueda.com/api/payment",
 //     { method: "GET", headers: { Accept: "application/json" } }
